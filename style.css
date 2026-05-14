@@ -1,0 +1,29 @@
+
+:root{--blue:#0f2747;--gold:#d4af37;--text:#f4f6f9}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,serif;background:var(--blue) url('images/wallpaper.svg');background-size:160px 160px;color:var(--text)}
+nav{position:sticky;top:0;background:rgba(8,16,28,0.92);padding:10px 0;z-index:999;border-bottom:1px solid rgba(212,175,55,.06)}
+nav ul{list-style:none;display:flex;gap:22px;justify-content:center;margin:0;padding:0}
+nav a{color:var(--text);text-decoration:none;font-weight:600}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.brand{text-align:center;padding:18px 0}
+.brand img{width:170px;border-radius:6px;border:3px solid var(--gold);display:block;margin:0 auto 12px}
+.brand .name{font-size:36px;margin:0}
+.brand .titles{color:var(--gold);margin-top:6px}
+.lede{max-width:900px;margin:18px auto;text-align:center;color:rgba(248,249,251,.95)}
+.bio-wrap{background:rgba(255,255,255,0.02);padding:18px;border-radius:8px;overflow:auto}
+.bio-wrap img{float:right;margin-left:18px;margin-bottom:8px;max-width:300px;border-radius:6px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:6px;cursor:pointer;border:3px solid rgba(212,175,55,.06)}
+#lightbox{display:none;position:fixed;inset:0;background:rgba(3,6,12,0.88);align-items:center;justify-content:center;z-index:10000}
+#lightbox img{max-width:92vw;max-height:88vh;border-radius:6px;box-shadow:0 10px 40px rgba(0,0,0,0.6)}
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.video-grid iframe{width:100%;height:220px;border-radius:6px;border:0}
+form.contact{max-width:640px;margin:18px auto;display:grid;gap:10px}
+input,textarea{padding:10px;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.03);color:var(--text)}
+button.btn{background:linear-gradient(180deg,var(--gold),#b8914f);border:none;padding:10px 14px;border-radius:6px;font-weight:700;cursor:pointer}
+#popup{display:none;position:fixed;z-index:11000;left:50%;top:30%;transform:translate(-50%,-50%);background:rgba(15,34,57,0.98);padding:18px;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.6);min-width:260px}
+#popup .close{position:absolute;right:10px;top:8px;background:transparent;border:none;color:var(--text);font-size:18px;cursor:pointer}
+#popup p{margin:0;padding-right:18px}
+.social-links{display:flex;gap:10px;justify-content:center;margin-bottom:12px}
+.social-links a{color:var(--text);font-weight:600;text-decoration:none}
